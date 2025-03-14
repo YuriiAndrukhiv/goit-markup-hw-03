@@ -30,7 +30,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  outline: 2px solid darkblue;
+  /* outline: 2px solid darkblue; */
 }
 
 .list {
@@ -129,23 +129,43 @@ header {
   margin-bottom: 94px;
 
   text-align: center;
-  background-color: violet;
+}
+
+.overlay {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* background-color: var(--prinary-text-color); */
+  /* background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ), url(../images/hero-image.jpg);*/
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/hero-image.jpg");
+    
+  /* background-image: url(../images/hero-image.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
+  padding-top: 200px;
+  padding-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
   letter-spacing: 0.06em;
   color: var(--white-color);
-  outline: 2px solid green;
 }
 
 .hero-button {
-  margin-bottom: 200px;
+  margin-bottom: 215px;
 
   font-family: inherit;
   font-weight: 700;
@@ -350,10 +370,6 @@ button {
 .portfilio-image {
   margin-bottom: 20px;
 }
-
-/* .ddd {
-  border: 1px solid #eee;
-} */
 
 .portfolio-title {
   margin-top: 0;
